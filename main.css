@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+button{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex;    
+    align-items: center;
+    width:100%;
+    height: 10vh;    
+    justify-content: center;
+}
+.nav-berger{
+    display:none;
+}
+h1{
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: #4c4a4a;   
+    }
+.nav-desktop{
+    display:flex;
+    justify-content: center;
+    width: 92vw;
+}
+.menuItems{   
+    text-align: end;  
+    width: 90%;
+}
+.menuItems ul li{
+    display: inline-block;
+    text-transform: uppercase;
+     margin-left: 70px;
+     font-size: 0.8em;
+}
+.loginBtn{
+    border-radius: 10px;
+    border: 2px solid #6ad6f7;
+    padding: 13px 28px;  
+    background: none;
+    color:#6ad6f7 ;   
+}
+.menuItems ul li a{
+color: #949292;
+}
+.mainGrid{
+    display: grid;
+    grid-template-rows: 450px 450px 450px 550px 450px;
+    
+}
+.gridFlex{
+    display: flex;   
+    justify-content: space-around;
+    align-items: center;
+
+}
+.subGrid1{
+    background: linear-gradient(225deg,#32c5ff,#b620e0,#f7b500);
+    
+}
+#gridText-left, #gridText-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    height: 249px;
+    width: 340px;
+}
+#gridText-left{
+    color: #fff;   
+}
+#gridText-left h2, #gridText-right h2{
+    margin-bottom: 20px;
+}
+#exploreBtn{
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+    background: linear-gradient( 177.31deg, #32c5ff -71.22%, #7275f0 81.97%, #b620e0 246.67% );
+    border: 1px solid #6236ff;
+    box-shadow: 0 3px 3px #494d64;
+}
+.subGrid1 .subGrid-Images{
+    display: flex;
+    flex-direction: row;   
+    height:200px;
+    width: 560px;     
+}
+.subGrid1 .subGrid-Images img{
+    margin-right: 40px;
+    height: 440px;
+    width: 279px;
+}
+.bgInfo{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.subGrid2 {
+    background-image: url(assets/Images/triangle-background.png);
+   
+}
+.subGrid2 img{
+    margin-top: 20px;
+    margin-left: -300px;  
+}
+
+.grayFont{
+    color: #787d84;
+}
+.subGrid-Text{   
+    font-size: 1.4rem;
+}
+#learnBtn{
+    padding: 15px;
+    width: 200px;
+    color: #0091ff;
+    border: 1px solid #0091ff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 24%), inset 0px 2px 0px #ffffff;
+    background: linear-gradient(180deg, #ffffff 0%, #d8d8d8 113.83%);
+}
+.subGrid3{
+    background: linear-gradient(to bottom, rgba(50, 197, 255, 0.12) 0%, #ffffff 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.subGrid3 .subGrid-Text::before{
+    content: open-quote;
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 11rem;
+}
+.subGrid3 .subGrid-Text{
+    width: 800px;
+    text-align: center;
+    margin-bottom: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+.subGrid3 .subGrid-Text::after{
+    content: close-quote;
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 11rem;
+}
+#author{
+    font-size: 1.1em;   
+}
+#subGrid-Images img{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.subGrid4{
+    background-image: url(assets/Images/code-background.png);
+   
+}
+
+.subGrid4 .subGrid-Text p{
+    margin-bottom: 40px;
+}
+#exploreSDKBtn{
+    padding: 15px;
+    width: 230px;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 24%), inset 0px 2px 0px rgb(255 255 255 / 12%);
+    background: linear-gradient(180deg, #313539 0%, #000000 100%);
+}
+
+.subGrid-code{
+    width: 550px;
+    height: 400px;
+    background-color: #000;
+    border-radius: 8px;
+   
+}
+.codeHead{
+    border:1px solid rgba(255, 255, 255, 0.12);
+    width:540px;
+    height:50px;
+    border-radius: 4px;
+
+}
+.codeHead ul{
+display: flex;
+justify-content: space-around;
+align-items: center;
+width:500px;
+height: 50px;
+}
+.codeHead li{
+   color:#fff;
+    text-transform: uppercase;
+     font-size: 0.8em;
+     display: flex;
+     align-items: center;
+}
+.codeBlock{
+    color:yellow;
+    padding: 20px;
+}
+.subGrid5{
+    background: linear-gradient( 257.46deg, #32c5ff -7.2%, #b620e0 67.92%, #f7b500 139.34% );
+     display: grid;
+     grid-template-columns:500px auto;
+     grid-template-rows: 400px 50px;
+    
+  }
+  .subGrid-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerCol{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    align-items: flex-start;
+    color: #ffffff;
+    font-size: 1em;
+  }
+  .footerItems li a{
+    color: #fff;
+    font-size: 1em;
+    
+  }
+  .footerItems li{
+    margin-top: 20px;
+
+  }
+  .copyrights{
+    color: #fff;
+    margin-left: 20px;
+  }
+   @media screen and (max-width:1200px){
+    .navbar{
+        height: 8vh;
+    } }
+
+    @media screen and (max-width:1200px){
+    .nav-desktop{
+        display: none;
+    } }
+    @media screen and (max-width:1200px){
+    .nav-berger{
+     height: 8vh;
+     width:100%;   
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    }
+    }
+    
+    @media screen and (max-width:1200px){
+    .subGrid1{
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+
+    }}
+
+
